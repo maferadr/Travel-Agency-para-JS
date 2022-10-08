@@ -4,42 +4,40 @@
 La idea basicamente sera proporcionar al usuario informacion turistica de un pais centroamericano con 
 poca extension geografica y ofrecerle el mejor Deal para unas vacaciones sonadas.*/
 
+let titulo = "Trip Deal";
 
-let titulo="Trip Deal";
+const DB = []
 
 function emptyValue(){
-    if (usuario, password, lugar, fecha,huespedes === ""){
+    const usuario = prompt("Ingrese su nombre de Usuario")
+    console.log("El nombre de usuario es" + usuario)
+
+    const password = prompt("Ingrese su contrasena")
+    console.log("La contrasena de" + " " + usuario + " " + es + " " + password)
+
+    DB.push(usuario, password)
+
+    if (usuario || password === ""){
         return false;
     }else{
         return true;
     }
 }
-
-// En este caso lo aplique poniendo los nombres de esas variables a modo pues queria que me arrojara la misma funcion 
-// para todos los valores vacios. Me dejas saber si es buena praxis o es mejor que lo aplique de otra manera. Gracias!
+emptyValue()
 
 let datoValido = emptyValue(prompt("Ingrese un valor valido"))
 while(!datoValido){
-    datoValido= prompt("Ingrese un valor valido")
-}
-
-let usuario= prompt("Ingrese su nombre de Usuario");{
-    console.log("El nombre de usuario es" + usuario);
+    datoValido = prompt("Ingrese un valor valido")
 }
 emptyValue()
+let usuario = prompt("Ingrese su nombre de Usuario");
+console.log("El nombre de usuario es" + usuario);
 
-let password= prompt("Ingrese su contrasena");{
-    console.log("La contrasena de" + " " + usuario + " " + "es" + password);
-}
-emptyValue()
-
+let password = prompt("Ingrese su contrasena");
+console.log("La contrasena de" + " " + usuario + " " + es + " " + password)
 
 let username= "mafer657";
 let pass= "0258mafer";
-
-// Estoy ingresando los valores y datos del usuario para que la funcion se ejecute de manera correcta
-// conforme a lo que vimos en clase pero, en caso de que sea un prompt general... Como puedo aplicar la 
-// condicion para que tanto el username como el password de cualquier usuario coincidan? Digo, sin haber establecido antes el valor de cada uno.
 
 for(let i = 0; i < 3; i ++){
     if (usuario === username && password === pass){
@@ -62,8 +60,6 @@ switch (signIn) {
     default:
         break;
 }
-emptyValue()
-
 
 function Busqueda(lugar, fecha, huespedes){
     this.lugar = lugar;
@@ -73,14 +69,7 @@ function Busqueda(lugar, fecha, huespedes){
 
 let lugar = prompt("Lugar de Destino");
 let fecha = prompt("Fecha de Estadia");
-let habitantes = prompt("Guest(s)");
+let huespedes = prompt("Guest(s)");
     if (isNaN(huespedes)){
         alert("Ingrese un valor valido");
     }
-emptyValue()
-
-
-    
-
-
-    
